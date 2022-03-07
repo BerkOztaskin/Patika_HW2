@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 37px;
+  position: relative;
+}
+
+.communication {
+  width: 200px;
+  height: auto;
+  visibility: hidden;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+}
+
+.hovering h1:hover img {
+  visibility: visible;
+  display: block;
+  transform: scale(1);
+}
+
+h2,
+h3 {
+  font-size: 30px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.container {
+  width: calc(100% - 200px);
+  margin: auto;
+  padding: 100px;
+}
+
+p {
+  font-size: 22px;
+  line-height: 1.8;
+}
+
+.section {
+  font-size: 28px;
+  line-height: 1.9;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.section:last-child {
+  margin-bottom: 0;
+}
+
+ul li {
+  text-transform: capitalize;
+  font-size: 25px;
+  line-height: 1.5;
+  font-weight: normal;
+  position: relative;
+}
+
+ul {
+  list-style: square;
+}
+
+.image {
+  width: 400px;
+  height: auto;
+  border: 10px solid rgb(116, 112, 116);
+}
+
+.hovering ul li img {
+  visibility: hidden;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  transition: all 0.3s ease;
+  transform: scale(0);
+}
+
+.hovering ul li:hover img {
+  visibility: visible;
+  display: block;
+  transform: scale(1);
+}
+
+.hovering ul li:hover span {
+  opacity: 0.5;
+}
+.hovering ul li:hover a {
+  opacity: 0.5;
+}
+
+.decor {
+  border-radius: 15px;
+  border: 20px solid rgba(198, 158, 238, 0.345);
+}
